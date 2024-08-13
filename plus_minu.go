@@ -9,12 +9,12 @@ func plusMinus(arr []int32) {
     var len_arr float64 = float64(len(arr))
     
     for _, number := range arr {
-        if number > 0 {
-            n_positive += 1.0
-        } else if number < 0 {
-            n_negative += 1.0
-        } else {
+        if number == 0 {
             n_zero += 1.0
+        } else if number > 0 {
+            n_positive += 1.0
+        } else {
+            n_negative += 1.0
         }
     }
     
